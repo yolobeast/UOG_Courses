@@ -1,0 +1,3 @@
+title = compiled_example;
+fields={stutent,marks,rank};
+buttons={aeroplane,bus,ship,train};

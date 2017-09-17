@@ -1,0 +1,48 @@
+/*
+ * ------------------------------------------------------------------
+ *  ParameterList.c - Manages the list from parameter list val
+ *
+ *  CIS*2750 - Software Systems Development and Integration - W15
+ *  School of Computer Science
+ *  University of Guelph
+ *  Author: Sathi Ranganatahan
+ * ------------------------------------------------------------------
+ */
+#include "ParameterList.h"
+
+/* this function is called by the main in order to print outhe the table*/
+ParameterList * creatList(void)
+{
+  ParameterList*list=malloc(sizeof(ParameterList));
+  list->index = 0;
+  list->temp=0;
+  return(list);
+}
+
+
+char* PL_next(ParameterList* l)
+{
+  int i=0;
+  int x=0;
+  
+  if(l->temp == l->index)
+  {
+    l->index--;
+    return(l->b[0]);
+  }
+  
+  while(i<=l->index)
+  {
+    strcpy(l->b[i],l->b[i+1]);
+    i++;
+  }
+  
+  if(l->index==-1)
+  {
+    return(NULL);
+  }
+  
+  l->index--;
+  
+  return(l->b[0]);
+}

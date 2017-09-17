@@ -1,0 +1,101 @@
+Sathi.Ranganathan
+0757619
+
+
+----------------------------------------------
+1.Problem
+
+- Have to creat a library to that takes in a text file that contains the 
+  inforation and parse it out.
+- The parsed infromation should be stored in a union, and be able to access it back
+- Now with given the same problem but now pasred it twice and by using JNI conver the main function from c to Java
+- where java will call GUI function to show how it will look like  
+- The GUI will hava  kind of compilers one for normal parameter manager and the other one is for Lex and yac
+------------------------------------------------
+2.Limation
+
+- The Parsing is not perfect and it will give some error
+  - When there is no list in the file there will be a saugment fault- it occurs beacause when plnext is called it returring infinit NULL
+  - when the string is not provided it will preset to (NULL)
+  - when the the int is not avaliable it will preset to 0
+  - whe the bool is not set it will preset to no
+  - when float is not provided it will preset to 0.0000
+  - the program might seg fault when name is not provided
+  
+- I havent implneted the required check in the pmmanage
+  - so if the number for required is 0 it wont anything 
+- My arrya size is set ot 500, if thhe file is too bigger than that it will give 
+  sagment fault
+
+- The program will run most of the time,even though i have zero mem ory leak from my test case file 
+  I am some how gettign JNI errors i try to solve them much as possible 
+
+- When the compil or the compie - run pressed more than twice with same file it will case the program 
+  parse error or JNI error 
+
+- some times the program wont work it will cause pasrse error or JNI error 
+
+- I try to fix most of the problem as possible but I couldn't find the JNI error  
+
+- none of the compile config works
+
+- my interface is not fully developed 
+
+- I couldnt do the error checking 
+
+- the program breaks and givs a JNI error when inputed a imporper file
+
+- working directory seems to have some issues, not sure how ot compile and rum the files from different directory
+
+- secound time parsing when using he IDE comipler only works wil some file, because of the hash function 
+
+--------------------------------------------------
+3.Run
+
+- type make 
+- inorder to run my program  type java Main it will open up the main GUI
+  - to compile click on compile button 
+  - to compile and run click on compile and run button 
+  - in order to change the compile option  click on congif and choose change compilers
+  - to close click on stop button or (ctrl - Q)
+  - to save (ctrl s)
+  - to save ass (ctrl shit s)
+  - to open (ctrl O)
+  - to help (F1)
+
+
+------------------------------------------------------------
+4. Testing 
+
+- Tested out most of the cases 
+   - if the file is all the identinfer and file info it will work perfectly
+   - if the list is empty it will not print anything at the place
+   - if there is sothing is new is in the text file it will provife you parse error 
+   - there was a porblem that i fixed it when using the tab 
+   - check to see if the JNIwrapper class working perfectly using soem test caes
+   - check too see if the TA test cases are working 
+   - run my program there is lot bugs thta i couldnt fix
+   - saving without .config will give you an pop up to to save it as .config
+
+   
+---------------------------------------------------------
+5.collboration
+
+- I have collborated with James.Maher,Josh.Pinsent, Kabir.Singh and Sameer Gulamali.
+- I have used 
+  - http://www.sparknotes.com/cs/searching/hashtables/section3.rhtml - I used this website to create my hash table 
+  - https://www.youtube.com/watch?v=MfhjkfocRR0&list=PLTxllHdfUq4f7-uHOpxXnBUbsuLiI9pmb - I used his videos to understand the hash table 
+  - https://github.com/Bananattack/uoguelph/tree/master/CIS2750/A1 -  I used this website get an idea how to do the make file and JNI and lex and yacc
+  - http://stackoverflow.com/questions/21534515/jfilechooser-open-in-current-directory - I learned how to do file chooser
+  - http://stackoverflow.com/questions/10952130/localized-accelerators-jmenuitem-hotkeys-in-swing- used this to understand hwo to do hot keys
+  - http://docs.oracle.com/javase/tutorial/uiswing/components/button.html - learned how to use radio keys 
+
+
+---------------------------------------------------------
+6.Code Refrencing 
+
+- http://troydhanson.github.io/uthash/
+- http://en.wikipedia.org/wiki/Hash_table
+- http://www.thelearningpoint.net/computer-science/data-structures-queues--with-c-program-source-code
+- http://stackoverflow.com/questions/19352066/java-jni-application-crash-due-to-stack-overflow
+- https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaNativeInterface.html
