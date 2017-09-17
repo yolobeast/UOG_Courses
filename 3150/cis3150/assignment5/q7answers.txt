@@ -1,0 +1,67 @@
+Enter n: 4
+1111
+1112
+1121
+1122
+1123
+1211
+1212
+1213
+1221
+1222
+1223
+1231
+1232
+1233
+Total : 14 
+
+Enter n: 5
+Total : 41
+
+Enter n: 6
+Total : 122 
+
+Enter n: 7
+Total : 365
+
+Enter n: 8
+Total : 1094
+
+1hr run n = 22
+
+i.  Enter n: 9
+	111112123
+	122221123
+	Number of worked soulution are : 2
+
+ii. Enter n: 9
+	111112332
+	111222331
+	112123213
+	112213123
+	121123123
+	121211332
+	122212331
+	123231312
+	123312231
+	Number of worked soulution are : 9
+
+iii. Enter n: 10
+	 Number of worked soulution are : 0
+
+iv. Enter n: 14
+	Number of worked soulution are : 0
+
+v.  Enter n: 10
+	Number of worked soulution are : 0
+
+vi.	Enter n: 10
+	1222121333
+	1233121233
+	Number of worked soulution are : 2
+
+
+
+
+
+
