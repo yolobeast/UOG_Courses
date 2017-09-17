@@ -1,0 +1,127 @@
+V "GNAT Lib v4.8"
+M P W=b
+A -gnatwa
+A -Wall
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_RECURSION
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK
+
+U sodoku%b		sodoku.adb		b0ebbd9a NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20120716125141 10fcae55
+D a-finali.ads		20111121113555 52ecdc1b
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20130104124955 386df5d4
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20110906094621 129923ea
+D i-cstrea.ads		20130102105938 3286f6aa
+D sodoku.adb		20160304220205 8886484e
+D system.ads		20140416144310 90249111
+D s-conca2.ads		20090420091404 fbd0f2fc
+D s-conca3.ads		20090420091404 762a026a
+D s-crtl.ads		20130102105938 1ea48bce
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20111024091915 b95bb341
+D s-finroo.ads		20120426095924 4ff27390
+D s-parame.ads		20110830140625 b6e20cc0
+D s-pooglo.ads		20110804083314 542f33d0
+D s-soflin.ads		20120515094619 24c8153c
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20130104124955 f78bcf95
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stopoo.ads		20111013103733 7b8fbeee
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 11|40r6 40r22
+X 7 a-textio.ads
+49K13*Text_IO 471e16 11|40w10 40r26
+52P9*File_Type(369R9) 11|45r23
+53n23*In_File{53E9} 11|259r30
+53n32*Out_File{53E9} 11|197r32
+86U14*Create 11|197s17
+92U14*Open 11|259s17
+98U14*Close 11|215s7 268s17
+166U14*New_Line 11|162s17 164s17 178s33 231s17 233s17 246s25 256s17
+205U14*Get 11|264s33
+241U14*Put 11|208s33 210s25
+242U14*Put 11|175s33 177s33 243s33 245s25
+249U14*Get_Line 11|195s17 258s17
+259U14*Put_Line 11|200s17 203s33 205s33 211s25 214s11
+263U14*Put_Line 11|163s17 165s17 169s33 171s33 180s17 194s17 216s11 232s17
+. 234s17 238s33 240s33 249s17 257s17 278s25
+X 11 sodoku.adb
+42U11*sodoku 42b11 281l5 281t11
+45p11 My_File{7|52P9} 197m24 197r24 200r26 203r42 205r42 208r37 210r29 211r34
+. 214r20 215m13 215r13 259m22 259r22 264r37 268m23 268r23
+46a7 name_of_file{string} 195m26 197r41 216r34 258m26 259r38
+47i7 last{natural} 195m39 197r57 216r50 258m39 259r54
+50A16 str(character)<integer><integer> 67r18 68r18
+51A16 numbers(integer)<integer><integer> 65r24 66r15 185r37 221r37
+54R16 given 58e17 61r35 99r46 120r43 122r36
+56i10 row{integer} 61m45 101r65 126r34 133r45 134r45 135m50 135r74 138m50
+. 145r88 147r57 153r41
+57i10 col{integer} 61m55 102r65 128r37 133r62 139m50 139r74 145r127 147r74
+. 153r58
+61r11 arrayelement{54R16} 272r46
+64b11 checkifdone{boolean} 272m17 275r20
+65a11 Sudokucopy{51A16} 76r28 90r28 108r36 133r21 147m33 153m17 270m17 273r24
+66a11 num{51A16} 265m33 270r31 273m17 276r38
+67a11 str1{50A16} 175r43 264m46 264r46 265r59
+68a11 str2{50A16} 190m33 208r51 226m33 243r43
+71V18 colcheck{boolean} 71b18 71>27 71>39 82l13 82t21 145s105
+71i27 col{integer} 76r41
+71i39 Number{integer} 76r48
+75i21 i{integer} 76r39
+85V14 rowcheck{boolean} 85b14 85>23 85>36 96l13 96t21 145s66
+85i23 row{integer} 90r39
+85i36 Number{integer} 90r48
+89i21 i{integer} 90r43
+99V18 squarecheck{boolean} 99b18 99>31 99>52 115l13 115t24 145s28
+99r31 arrayelement{54R16} 101r52 102r52
+99i52 Number{integer} 108r65
+101i17 row{integer} 108r47
+102i17 col{integer} 108r53
+106i21 j{integer} 108r51
+107i29 i{integer} 108r59
+120V14 fillemptysopt{boolean} 120b14 120>28 136s40 140s40 148s37 156l9 156t22
+. 272s32
+120r28 arrayelement{54R16} 122r45 126r21 128r24 133r32 133r49 145r41 145r75
+. 145r114 147r44 147r61 153r28 153r45
+122r17 nextarrayelement{54R16} 134r28 135m33 135r57 136r54 138m33 139m33
+. 139r57 140r54 148r51
+144i21 Number{integer} 145r54 145r93 145r132 147r82
+159U15 printincomplete 159b15 182l13 182t28 230s17
+167i21 i{integer} 168r28 170r32 175r48
+174i29 j{integer} 175r50
+185U19 printtofile 185b19 185>31 218l13 218t24 250s17
+185a31 num{51A16} 190r60
+188i21 i{integer} 190r38 190r64
+189i29 j{integer} 190r40 190r66
+201i21 i{integer} 202r28 204r32 208r56
+207i29 j{integer} 208r58
+221U15 Print_Sudoku 221b15 221>28 252l13 252t25 276s25
+221a28 num{51A16} 226r60 250r29
+224i21 i{integer} 226r38 226r64
+225i29 j{integer} 226r40 226r66
+236i21 i{integer} 237r28 239r32 243r48
+242i29 j{integer} 243r50
+262i21 i{integer} 264r51 265r37 265r64
+263i29 j{integer} 264r53 265r39 265r66
+

@@ -1,0 +1,93 @@
+V "GNAT Lib v4.8"
+M P W=b
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_RECURSION
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK
+
+U eightqueen%b		eightqueen.adb		92504594 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20120716125141 10fcae55
+D a-finali.ads		20111121113555 52ecdc1b
+D a-inteio.ads		20070406091342 f64b89a4
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20130104124955 386df5d4
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-unccon.ads		20070406091342 f9eb8f06
+D eightqueen.adb	20160405215913 5c7639e4
+D interfac.ads		20110906094621 129923ea
+D i-cstrea.ads		20130102105938 3286f6aa
+D system.ads		20140416144310 90249111
+D s-crtl.ads		20130102105938 1ea48bce
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20111024091915 b95bb341
+D s-finroo.ads		20120426095924 4ff27390
+D s-parame.ads		20110830140625 b6e20cc0
+D s-pooglo.ads		20110804083314 542f33d0
+D s-soflin.ads		20120515094619 24c8153c
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20130104124955 f78bcf95
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stopoo.ads		20111013103733 7b8fbeee
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 11|13r6 13r22 14r6 14r31
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|45] 11|14w10 14r35
+X 8 a-textio.ads
+49K13*Text_IO 471e16 11|13w10 13r26
+52P9*File_Type(369R9) 11|25r13
+53n32*Out_File{53E9} 11|37r40 90r36
+53n42*Append_File{53E9} 11|33r40
+86U14*Create 11|37s7 90s3
+87p7 File{52P9} 11|37r15 90r11
+88e7 Mode{53E9} 11|37r32 90r28
+89s7 Name{string} 11|37r50 90r46
+92U14*Open 11|33s9
+93p7 File{52P9} 11|33r15
+94e7 Mode{53E9} 11|33r32
+95s7 Name{string} 11|33r53
+98U14*Close 11|59s9
+99U14*Delete 11|91s3
+99p22 File{52P9} 11|91r10
+241U14*Put 11|41s9 49s25 51s25
+259U14*Put_Line 11|43s9 55s12 58s9
+263U14*Put_Line 11|104s2
+294X4*Name_Error 11|36r14
+X 9 a-tiinio.ads
+59U14*Put 11|42s9[4|18]
+X 11 eightqueen.adb
+16U11*eightqueen 16b11 107l5 107t15
+18a2 checkboolone(boolean) 69r22 71m25 81m25 94m9
+19a2 checkbooltwo(boolean) 69r42 72m25 82m25 97m9
+20a2 checkboolthree(boolean) 69r64 73m25 83m25 100m9
+21a2 x(integer) 48r22 70m25
+23i2 sum{integer} 40m9 40r14 42r21 102m2
+25p1 My_File{8|52P9} 33m23 33r23 37m23 37r23 41r13 42r13 43r18 49r29 51r29
+. 55r21 58r18 59m15 59r15 90m19 90r19 91m18 91r18
+27U11 print 27b11 61l5 61t10 78s33
+45i13 z{integer} 48r29
+47i21 i{integer} 48r24
+63U11 try 63b11 63>15 76s33 86l5 86t8 103s2
+63i15 i{integer} 69r55 69r79 70r27 72r38 73r40 75r29 76r37 82r38 83r40
+67i13 j{integer} 69r35 69r57 69r81 70r33 71r38 72r40 73r42 81r38 82r40 83r42
+93i6 i{integer} 94r22
+96i6 i{integer} 97r22
+99i6 i{integer} 100r24
+
